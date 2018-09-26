@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lamp_info_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzb.sl.deviceManagement.LampManage.LampInfoManageActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/lamp_info_Table"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/lamp_info_img2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/right" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lampInfo"
+                    android:textColor="@color/bg_white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lamp_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lamp_info_Table"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_white"
+            android:gravity="center">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lamp_info_rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/lamp_info_rl"
+            android:layout_marginTop="3dp"
+            android:background="@color/bg_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/lampNumb"
+                    android:gravity="center"
+                    android:background="@drawable/textb"
+                    android:textColor="@color/bg_white" />
+
+                <TextView
+                    android:id="@+id/lamp_info_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#f000" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lamp_info_rl_Nname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/lamp_info_rl_name"
+            android:layout_marginTop="2dp"
+            android:background="@color/bg_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:background="@drawable/textb"
+                    android:textColor="@color/bg_white"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/DimmingPort"
+                    />
+
+                <TextView
+                    android:id="@+id/lamp_info_text_Nname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#f000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB">
+    <RelativeLayout
+        android:id="@+id/st_Table"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Strategy"
+                android:textColor="@color/bg_white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/st_Table">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/st_srfl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.zzb.fragment.sc.stController.ItemRemoveRecyclerView
+                android:id="@+id/st_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEBEB"></com.zzb.fragment.sc.stController.ItemRemoveRecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</RelativeLayout>

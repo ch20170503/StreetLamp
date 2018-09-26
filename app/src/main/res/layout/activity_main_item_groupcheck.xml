@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/checkbox_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:visibility="invisible"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/up"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:scaleType="center"
+        android:layout_marginRight="30dp"
+        android:src="@mipmap/icon_top" />
+
+    <ImageView
+        android:id="@+id/handle"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_vertical|right"
+        android:scaleType="center"
+        android:src="@mipmap/icon_drag" />
+</LinearLayout>

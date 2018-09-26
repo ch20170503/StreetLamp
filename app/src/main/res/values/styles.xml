@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Animation_Button_Dialog">
+        <item name="android:windowEnterAnimation">@anim/anim_below</item>
+        <item name="android:windowExitAnimation">@anim/anim_belowt</item>
+    </style>
+
+
+
+    <style name="MainTheme" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+</resources>

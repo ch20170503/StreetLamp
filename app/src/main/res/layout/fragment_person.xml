@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/set_f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/set_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/set">
+    <TextView
+        android:id="@+id/set_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set"
+        android:textColor="@color/bg_white"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+<LinearLayout
+    android:id="@+id/set_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    android:layout_below="@id/set_text">
+    <com.zzb.mainnavigatetabbar.widget.XCRoundImageView
+        android:id="@+id/set_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/timg"/>
+    <TextView
+        android:id="@+id/set_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/bg_white"
+        android:text="我是用户昵称"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/set_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/rightx"
+            />
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
+ <com.maiml.library.BaseItemLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/set_rl"
+        app:text_size  = "18"
+        app:icon_margin_left = "10"
+        app:icon_text_margin = "10"
+        app:item_height = "50"
+        app:right_text_margin = "10"
+        >
+ </com.maiml.library.BaseItemLayout>
+    <TextView
+        android:id="@+id/set_close"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="#bc2005"
+        android:text="@string/ExitSystem"
+        />
+</RelativeLayout>

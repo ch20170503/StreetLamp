@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB">
+    <RelativeLayout
+        android:id="@+id/message_Table"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Alert"
+                android:textColor="@color/bg_white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/message_type1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#E7A257"
+    android:layout_below="@id/message_Table">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg_white"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:text="@string/AlertContent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg_white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:text="@string/AlarmTime"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg_white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:text="@string/AlarmType"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_type1">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/al_srfl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.zzb.fragment.message.messageitem.ItemRemoveRecyclerView
+                android:id="@+id/al_itr"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </com.zzb.fragment.message.messageitem.ItemRemoveRecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</RelativeLayout>
